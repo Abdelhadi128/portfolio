@@ -5,7 +5,7 @@ import { Github, SquareArrowOutUpRight } from "lucide-react";
 import type React from "react";
 
 type projectProps = {
-    projectsRef: React.RefObject<HTMLDivElement>
+    projectsRef: React.RefObject<HTMLDivElement | null>
 }
 
 export default function ProjectsSection({projectsRef}: projectProps) {

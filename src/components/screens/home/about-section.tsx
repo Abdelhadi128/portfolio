@@ -3,10 +3,10 @@ import { Database, Terminal, Zap } from 'lucide-react'
 import type React from 'react'
 
 type aboutProps= {
-    aboutRef:  React.RefObject<HTMLDivElement>
+    aboutRef:  React.RefObject<HTMLDivElement | null>
 }
 
-export default function AboutSection({aboutRef}: aboutProps) {
+export default function AboutSection ({aboutRef}: aboutProps) {
     console.log(aboutRef)
     const skils = [
             {title: "Problem Solving",description: "Breaking down complex challenges into elegant, efficient solutions." , icon: <Terminal size={40} className='text-primary bg-primary/10 p-2 rounded-lg border border-primary/20 group-hover:bg-primary/30'/>},

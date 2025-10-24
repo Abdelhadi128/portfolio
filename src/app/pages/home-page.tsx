@@ -23,7 +23,7 @@ export default function HomePage() {
         { path: "/contact", element: "Contact", ref: contactRef },
     ];
 
-    const scrollToSection = (ref: any) => {
+    const scrollToSection = (ref:  React.RefObject<HTMLDivElement>) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
     };
 

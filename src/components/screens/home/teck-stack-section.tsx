@@ -2,7 +2,7 @@ import { H1 } from '@/components/ui/typography'
 import React from 'react'
 
 type teckProps = {
-    teckRef: React.RefObject<HTMLDivElement>
+    teckRef: React.RefObject<HTMLDivElement | null>
 }
 
 export default function TeckStackSection({teckRef}: teckProps) {

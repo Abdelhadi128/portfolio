@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 import type React from 'react'
 
 type contactProps = {
-    contactRef: React.RefObject<HTMLDivElement>
+    contactRef: React.RefObject<HTMLDivElement | null>
 }
 
 export default function ContactSection({contactRef}: contactProps) {

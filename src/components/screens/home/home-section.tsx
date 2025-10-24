@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 import type React from "react";
 
 type homeProps = {
-    homeRef: React.RefObject<HTMLDivElement>
+    homeRef: React.RefObject<HTMLDivElement | null>
 }
 
 export default function HomeSection({homeRef}: homeProps) {
