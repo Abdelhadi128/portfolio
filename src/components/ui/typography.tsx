@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { HTMLAttributes, forwardRef } from "react";
+import { forwardRef, type HTMLAttributes } from "react";
 
 // Define a base type for our typography components
 type TypographyProps = HTMLAttributes<HTMLHeadingElement | HTMLParagraphElement | HTMLQuoteElement>;
