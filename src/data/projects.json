@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Car Rental App",
+    "description": "A mobile web for renting cars with user authentication, car listings, and booking features.",
+    "link": "",
+    "image": "/projects/car-rental.jpg",
+    "tags": ["React", "Tailwind CSS", "MySQL", "Node.js"]
+  },
+  {
+    "name": "Oriontation App",
+    "description": "A web application designed to assist new students in navigating campus life with maps, event info, and resources.",
+    "link": "",
+    "image": "/projects/oriontation.jpeg",
+    "tags": ["React", "MongoDB", "Tailwind CSS", "Node.js"]
+  },
+  {
+    "name": "Portfolio Website",
+    "description": "A personal portfolio website to showcase projects, skills, and experience with a modern design.",
+    "link": "",
+    "image": "/projects/portfolio.png",
+    "tags": ["React", "TypeScript", "Tailwind CSS", "Shadcn/ui"]
+  },
+  {
+    "name": "Quiz App",
+    "description": "A web application that provides IT-related quizzes to test and improve users' knowledge in various IT languages.",
+    "link": "",
+    "image": "/projects/it-quiz.png",
+    "tags": ["React", "Tailwind CSS", "Node.js", "MongoDB"]
+  }
+]
