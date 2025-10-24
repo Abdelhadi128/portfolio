@@ -39,13 +39,13 @@ export default function HomeSection({homeRef}: homeProps) {
             <div className="min-h-full flex-1 container md:flex md:items-center md:justify-around px-5 md:px-0 flex flex-col md:flex-row gap-10 z-10 py-20 ">
                 <div className="mt-10 md:mt-0 flex md:hidden items-center justify-center ">
                     <div className="relative flex items-center justify-center">
-                        <img src="/public/images/profile.JPG" alt="" className="size-30 md:size-70 rounded-full object-cover ring-4 ring-[#7f8489] z-50"/>
+                        <img src="/images/profile.JPG" alt="" className="size-30 md:size-70 rounded-full object-cover ring-4 ring-[#7f8489] z-50"/>
                     </div>
                 </div>
                 <div className="flex flex-col gap-4 flex-wrap items-center md:items-start max-w-full md:max-w-lg">
                     <H1 className="text-[#7f8489] font-fira z-10 text-center md:text-start lg:text-6xl">
                         <span className="text-[#e4e4e7]">Hi I'm </span>
-                        Abdelhadi Nachit A
+                        Abdelhadi Nachit
                     </H1>
                     <H3 className="text-[#e4e4e7] font-fira z-10 lg:text-3xl">
                         Full Stack Developer 
