@@ -1,7 +1,12 @@
 import { H1, H3, P } from "@/components/ui/typography";
 import { ChevronDown } from "lucide-react";
+import type React from "react";
 
-export default function HomeSection({homeRef}) {
+type homeProps = {
+    homeRef: React.RefObject<HTMLDivElement>
+}
+
+export default function HomeSection({homeRef}: homeProps) {
     
     return (
         <div ref={homeRef} className="min-h-screen w-full flex flex-col items-center justify-center bg-black relative">

@@ -2,7 +2,13 @@ import { Button } from "@/components/ui/button";
 import { H3, P, H1 } from "@/components/ui/typography";
 import projects from '@/data/projects.json';
 import { Github, SquareArrowOutUpRight } from "lucide-react";
-export default function ProjectsSection({projectsRef}) {
+import type React from "react";
+
+type projectProps = {
+    projectsRef: React.RefObject<HTMLDivElement>
+}
+
+export default function ProjectsSection({projectsRef}: projectProps) {
   return (
     <div ref={projectsRef} className="w-full h-full bg-black flex flec-col justify-center pb-5">
         <div className="w-full mx-1 md:container">

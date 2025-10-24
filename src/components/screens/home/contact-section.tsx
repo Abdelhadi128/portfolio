@@ -1,7 +1,12 @@
 import { H1, P } from '@/components/ui/typography'
 import { Github, Linkedin, Mail } from 'lucide-react'
+import type React from 'react'
 
-export default function ContactSection({contactRef}) {
+type contactProps = {
+    contactRef: React.RefObject<HTMLDivElement>
+}
+
+export default function ContactSection({contactRef}: contactProps) {
   const contacts = [
           {name: "GitHub", useName:"Abdelhadi128", link: "https://github.com/Abdelhadi128", icon:<Github size={40} className='text-primary bg-primary/10 p-2 rounded-lg border border-primary/20 group-hover:bg-primary/30'/>},
           {name: "LinkedIn", useName:"Abdelhadi128", link: "https://www.linkedin.com/in/abdelhadi-nachit", icon: <Linkedin size={40} className='text-primary bg-primary/10 p-2 rounded-lg border border-primary/20 group-hover:bg-primary/30'/>},

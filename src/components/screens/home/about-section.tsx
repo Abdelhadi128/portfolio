@@ -1,7 +1,13 @@
 import { H1, P } from '@/components/ui/typography'
 import { Database, Terminal, Zap } from 'lucide-react'
+import type React from 'react'
 
-export default function AboutSection({aboutRef}) {
+type aboutProps= {
+    aboutRef:  React.RefObject<HTMLDivElement>
+}
+
+export default function AboutSection({aboutRef}: aboutProps) {
+    console.log(aboutRef)
     const skils = [
             {title: "Problem Solving",description: "Breaking down complex challenges into elegant, efficient solutions." , icon: <Terminal size={40} className='text-primary bg-primary/10 p-2 rounded-lg border border-primary/20 group-hover:bg-primary/30'/>},
             {title: "Performance",description: "Optimizing applications for speed, efficiency, and user experience." , icon: <Zap size={40} className='text-primary bg-primary/10 p-2 rounded-lg border border-primary/20 group-hover:bg-primary/30'/>},
@@ -42,7 +48,6 @@ export default function AboutSection({aboutRef}) {
                     </div>
                 </div>
             </div>
-            
         </div>
     )
 }

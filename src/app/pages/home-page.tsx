@@ -5,15 +5,15 @@ import ContactSection from "@/components/screens/home/contact-section";
 import HomeSection from "@/components/screens/home/home-section";
 import ProjectsSection from "@/components/screens/home/projects-section";
 // import TeckStackSection from "@/components/screens/home/teck-stack-section";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 export default function HomePage() {
 
-    const homeRef = useRef(null);
+    const homeRef = useRef<HTMLDivElement | null>(null);
     // const teckRef = useRef(null);
-    const aboutRef = useRef(null);
-    const projectsRef = useRef(null);
-    const contactRef = useRef(null);
+    const aboutRef = useRef<HTMLDivElement | null>(null);
+    const projectsRef = useRef<HTMLDivElement | null>(null);
+    const contactRef = useRef<HTMLDivElement | null>(null);
 
     const navElements = [
         { path: "/", element: "Home", ref: homeRef },
