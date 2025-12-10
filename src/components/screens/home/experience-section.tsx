@@ -48,7 +48,7 @@ export default function ExperienceSection() {
     return (
         <motion.section
             id="experience"
-            className="w-full min-h-screen flex flex-col items-center py-20 scroll-mt-20"
+            className="w-full min-h-screen flex flex-col items-center md:py-20 md:scroll-mt-20"
             variants={container}
             initial="hidden"
             whileInView="show"

@@ -48,7 +48,7 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1 }}
-            className='w-full min-h-screen flex flex-col items-center justify-center py-20 scroll-mt-20'
+            className='w-full min-h-screen flex flex-col items-center justify-center md:py-20 md:scroll-mt-20'
         >
             <section 
                 id='contact' 

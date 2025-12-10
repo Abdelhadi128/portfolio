@@ -32,14 +32,14 @@ export default function CertificatesSection() {
   return (
     <motion.div
       id="certificates"
-      className="w-full h-screen flex flex-col items-center py-20 sm:py-20 md:py-20 overflow-x-hidden relative"
+      className="w-full h-screen flex flex-col items-center sm:py-20 md:py-20 overflow-x-hidden relative"
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-100px" }}
     >
       <div className="w-full h-full flex flex-col items-center">
-        <H1 className="text-primary font-fira text-center mb-10 underline underline-offset-8">
+        <H1 className="text-primary font-fira text-center underline underline-offset-8">
           Certificates
         </H1>
 
