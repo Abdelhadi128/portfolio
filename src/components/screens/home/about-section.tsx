@@ -46,7 +46,7 @@ export default function AboutSection() {
     return (
         <motion.section 
             id='about' 
-            className='w-full min-h-screen md:h-screen flex flex-col items-center py-20 scroll-mt-20'
+            className='w-full min-h-screen md:h-screen flex flex-col items-center mt-10 md:py-20 scroll-mt-20'
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -84,7 +84,7 @@ export default function AboutSection() {
                         {skills.map((skill, index) => (
                             <div 
                                 key={index}
-                                className='group p-6 bg-card rounded-xl border border-border hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1'
+                                className='group border-2 border-purple-500/20 p-6 bg-card rounded-xl md:border md:border-border hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1'
                             >
                                 <div className='mb-4'>
                                     {skill.icon}

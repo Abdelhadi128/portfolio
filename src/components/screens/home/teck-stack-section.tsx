@@ -77,7 +77,7 @@ export default function TechStackSection() {
     return (
         <motion.section 
             id="skills" 
-            className="w-full min-h-screen py-20 px-5 md:px-0 flex flex-col items-center scroll-mt-20"
+            className="w-full min-h-screen mt-10 md:py-20 px-5 md:px-0 flex flex-col items-center scroll-mt-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
