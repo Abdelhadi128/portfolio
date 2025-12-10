@@ -1,6 +1,6 @@
 import { H1, P } from '@/components/ui/typography';
 import { Database, Terminal, Zap } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 
 export default function AboutSection() {
     const skills = [
@@ -21,7 +21,7 @@ export default function AboutSection() {
         },
     ];
 
-    const containerVariants = {
+    const containerVariants:Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -31,7 +31,7 @@ export default function AboutSection() {
         }
     };
 
-    const itemVariants = {
+    const itemVariants:Variants = {
         hidden: { opacity: 0, y: 50 },
         visible: {
             opacity: 1,
@@ -101,18 +101,19 @@ export default function AboutSection() {
 
                     {/* Stats Section */}
                     {/* <motion.div 
-                        className='md:w-9/12 grid grid-cols-2 md:grid-cols-3 gap-4 mt-8'
+                        className='md:w-9/12 grid grid-cols-2 md:grid-cols-4 gap-4 mt-8'
                         variants={containerVariants}
                     >
                         {[
-                            // { label: "Years Experience", value: "2+" },
+                            { label: "Years Experience", value: "2+" },
                             { label: "Projects Completed", value: "15+" },
                             { label: "Technologies", value: "20+" },
                             { label: "Certifications", value: "4+" },
                         ].map((stat, index) => (
-                            <div 
+                            <motion.div 
                                 key={index}
                                 className='text-center p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-300'
+                                variants={itemVariants}
                             >
                                 <div className='text-2xl md:text-3xl font-bold text-primary mb-1'>
                                     {stat.value}
@@ -120,7 +121,7 @@ export default function AboutSection() {
                                 <div className='text-xs md:text-sm text-muted-foreground'>
                                     {stat.label}
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </motion.div> */}
                 </div>

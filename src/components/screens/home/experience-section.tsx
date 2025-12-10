@@ -1,6 +1,6 @@
 import { H1, H3, P } from "@/components/ui/typography";
 import { Calendar, ChevronRight, Briefcase, MapPin } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 export default function ExperienceSection() {
 
@@ -22,7 +22,7 @@ export default function ExperienceSection() {
     ];
 
     // ✨ Animation Variants
-    const container = {
+    const container:Variants = {
         hidden: { opacity: 0, y: 80 },
         show: {
             opacity: 1,

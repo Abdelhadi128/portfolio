@@ -1,6 +1,6 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { H1 } from "@/components/ui/typography";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 export default function CertificatesSection() {
   const certificates = [
@@ -11,7 +11,7 @@ export default function CertificatesSection() {
   ];
 
   // Animation variants
-  const containerVariants = {
+  const containerVariants:Variants = {
     hidden: { opacity: 0, y: 80 },
     show: {
       opacity: 1,

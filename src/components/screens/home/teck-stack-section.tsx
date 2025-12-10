@@ -1,7 +1,6 @@
 import { H1, H3, P } from "@/components/ui/typography";
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { Code2, Database, Wrench } from 'lucide-react';
-
 export default function TechStackSection() {
     const skills = {
         frontend: [
@@ -41,7 +40,7 @@ export default function TechStackSection() {
         }
     ];
 
-    const containerVariants = {
+    const containerVariants:Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -51,7 +50,7 @@ export default function TechStackSection() {
         }
     };
 
-    const itemVariants = {
+    const itemVariants:Variants = {
         hidden: { opacity: 0, scale: 0.8 },
         visible: {
             opacity: 1,
@@ -63,14 +62,14 @@ export default function TechStackSection() {
         }
     };
 
-    const cardVariants = {
+    const cardVariants:Variants  = {
         hidden: { opacity: 0, y: 30 },
         visible: {
             opacity: 1,
             y: 0,
             transition: {
                 duration: 0.6,
-                ease: "easeOut"
+                ease: 'easeOut',            
             }
         }
     };

@@ -1,5 +1,5 @@
 import { H1, H3, P } from "@/components/ui/typography";
-import { ArrowDownToLine, ChevronDown, Download, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDownToLine, ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 import { SparkleParticles } from '@/components/ui/sparkle-particles';
 import { useTheme } from "@/providers/theme-provider";
 import { Button } from "@/components/ui/button";

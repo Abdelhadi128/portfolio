@@ -7,7 +7,7 @@ import ExperienceSection from "@/components/screens/home/experience-section";
 import HomeSection from "@/components/screens/home/home-section";
 import ProjectsSection from "@/components/screens/home/projects-section";
 import TechStackSection from "@/components/screens/home/teck-stack-section";
-import { useRef, useEffect, useState } from "react";
+import { useRef} from "react";
 
 export default function HomePage() {
     const homeRef = useRef<HTMLDivElement | null>(null);
@@ -17,8 +17,6 @@ export default function HomePage() {
     const certificatesRef = useRef<HTMLDivElement | null>(null);
     const experienceRef = useRef<HTMLDivElement | null>(null);
     const contactRef = useRef<HTMLDivElement | null>(null);
-
-    const [activeSection, setActiveSection] = useState('home');
 
     const navElements = [
         { path: "/", element: "Home", ref: homeRef },
@@ -30,41 +28,9 @@ export default function HomePage() {
         { path: "/contact", element: "Contact", ref: contactRef },
     ];
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '-50% 0px -50% 0px',
-            threshold: 0
-        };
-
-        const observerCallback = (entries: IntersectionObserverEntry[]) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-        navElements.forEach(({ ref }) => {
-            if (ref.current) {
-                observer.observe(ref.current);
-            }
-        });
-
-        return () => {
-            navElements.forEach(({ ref }) => {
-                if (ref.current) {
-                    observer.unobserve(ref.current);
-                }
-            });
-        };
-    }, []);
-
     return (
         <main className="bg-accent dark:bg-black h-full">
-            <NavBar navElements={navElements} activeSection={activeSection} />
+            <NavBar navElements={navElements}  />
             <div ref={homeRef} id="home">
                 <HomeSection />
             </div>

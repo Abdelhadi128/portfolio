@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { H3, P, H1 } from "@/components/ui/typography";
 import projects from "@/data/projects.json";
 import { Github, SquareArrowOutUpRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const containerVariants = {
   hidden: {},
@@ -13,7 +13,7 @@ const containerVariants = {
   }
 };
 
-const cardVariants = {
+const cardVariants:Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
 };
