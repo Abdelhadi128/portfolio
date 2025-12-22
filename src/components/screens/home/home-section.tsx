@@ -4,6 +4,7 @@ import { SparkleParticles } from '@/components/ui/sparkle-particles';
 import { useTheme } from "@/providers/theme-provider";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export default function HomeSection() {
     const { theme } = useTheme();
