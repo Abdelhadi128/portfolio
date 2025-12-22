@@ -52,7 +52,7 @@ export default function HomeSection() {
                         <div className="relative group">
                             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
                             <img 
-                                src="/images/profile.jpg" 
+                                src="/public/images/profile.jpg" 
                                 alt="Abdelhadi Nachit - Full Stack Developer" 
                                 className="relative z-40 w-32 h-32 md:w-64 md:h-64 rounded-full object-cover ring-4 ring-border"
                                 loading="eager"
@@ -91,14 +91,17 @@ export default function HomeSection() {
                                     aria-label={link.name}
                                     className="
                                         p-3 
+                                        border-1
+                                        border-primary
                                         bg-card 
-                                        border 
-                                        border-border 
+                                        md:border 
+                                        md:border-border 
                                         hover:border-primary 
                                         rounded-lg 
                                         transition-all 
                                         duration-300 
                                         hover:scale-110
+
                                     "
                                 >
                                     {link.icon}
@@ -142,7 +145,7 @@ export default function HomeSection() {
                         <div className="relative group">
                             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
                             <img 
-                                src="/images/profile.jpg" 
+                                src="/public/images/profile.jpg" 
                                 alt="Abdelhadi Nachit - Full Stack Developer" 
                                 className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover ring-4 ring-border"
                                 loading="eager"

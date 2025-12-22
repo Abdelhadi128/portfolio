@@ -36,7 +36,7 @@ export default function NavBar({navElements}:navProps) {
                     </div>
                     {/* mobile menu */}
                     <div className="md:hidden">
-                        {openMenu ? <X size={45} onClick={()=>setOpenMenu(!openMenu)} className="cursor-pointer text-white"/> : <Menu size={45} onClick={()=>setOpenMenu(!openMenu)} className="cursor-pointer text-white"/>}
+                        {openMenu ? <X size={45} onClick={()=>setOpenMenu(!openMenu)} className="cursor-pointer "/> : <Menu size={45} onClick={()=>setOpenMenu(!openMenu)} className="cursor-pointer"/>}
                     </div>
                 </div>
                 {openMenu && (
@@ -50,6 +50,9 @@ export default function NavBar({navElements}:navProps) {
                                 </ScrollIntoView>
                             ))
                             }
+                            <li className=" px-4 py-2 rounded-lg cursor-pointer">
+                                <ModeToggle/>
+                            </li>
                         </ul>
                     </div>
                 )}
