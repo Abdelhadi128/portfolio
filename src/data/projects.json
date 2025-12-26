@@ -1,30 +1,34 @@
 [
   {
     "name": "Car Rental App",
-    "description": "A mobile web for renting cars with user authentication, car listings, and booking features.",
-    "link": "",
+    "description": "A mobile web application for renting cars with user authentication, car listings, and booking features.",
     "image": "/projects/car-rental.jpg",
-    "tags": ["React", "Tailwind CSS", "MySQL", "Node.js"]
+    "tags": ["React", "Tailwind CSS", "MySQL", "Node.js"],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/Abdelhadi128/car-rental-app"
   },
   {
-    "name": "Oriontation App",
+    "name": "Orientation App",
     "description": "A web application designed to assist new students in navigating campus life with maps, event info, and resources.",
-    "link": "",
     "image": "/projects/oriontation.jpeg",
-    "tags": ["React", "MongoDB", "Tailwind CSS", "Node.js"]
+    "tags": ["React", "MongoDB", "Tailwind CSS", "Node.js"],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/Abdelhadi128/orientation-app"
   },
   {
     "name": "Portfolio Website",
-    "description": "A personal portfolio website to showcase projects, skills, and experience with a modern design.",
-    "link": "",
+    "description": "A personal portfolio website to showcase projects, skills, and experience with a modern, responsive design.",
     "image": "/projects/portfolio.png",
-    "tags": ["React", "TypeScript", "Tailwind CSS", "Shadcn/ui"]
+    "tags": ["React", "TypeScript", "Tailwind CSS", "Shadcn/ui"],
+    "liveUrl": "https://your-portfolio-url.com",
+    "githubUrl": "https://github.com/Abdelhadi128/portfolio"
   },
   {
-    "name": "Quiz App",
-    "description": "A web application that provides IT-related quizzes to test and improve users' knowledge in various IT languages.",
-    "link": "",
+    "name": "IT Quiz App",
+    "description": "A web application that provides IT-related quizzes to test and improve users' knowledge in various programming languages.",
     "image": "/projects/it-quiz.png",
-    "tags": ["React", "Tailwind CSS", "Node.js", "MongoDB"]
+    "tags": ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/Abdelhadi128/it-quiz-app"
   }
 ]
